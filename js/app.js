@@ -7,6 +7,10 @@ let tileSize = canvas.width / tileCount -2
 let headX = 10
 let headY = 10
 
+//variable to add to your head(makes the snake longer)
+let orangeX = 5
+let orangeY = 5
+
 //moving our snake
 let xVelocity = 0
 let yVelocity = 0
@@ -16,6 +20,7 @@ function drawGame() {
   // console.log('draw game');
   clearScreen()
   changeSnakePosition()
+  drawOrange()
   drawSnake()
   setTimeout(drawGame, 1000/ speed)
 
@@ -29,7 +34,7 @@ function clearScreen() {
 console.log(clearScreen);
 
 function drawSnake() {
-  ctx.fillStyle = 'orange'
+  ctx.fillStyle = 'green'
   ctx.fillRect(headX * tileCount, headY * tileCount, tileSize,tileSize)
 }
 
@@ -37,6 +42,11 @@ function changeSnakePosition(){
   headX = headX + xVelocity
   headY = headY + yVelocity
 
+}
+
+function drawOrange(){
+  ctx.fillStyle = 'red'
+  ctx.fillRect(orangeX * tileCount, orangeY * tileCount, tileSize,tileSize)
 }
 
 document.body.addEventListener('keydown', keyDown);
