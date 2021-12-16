@@ -13,7 +13,7 @@ class SnakePart {
 
 
 let speed = 7;
-let tileCount = 29;
+let tileCount = 24;
 let tileSize = canvas.width / tileCount -2
 let headX = 10
 let headY = 10
