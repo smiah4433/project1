@@ -5,8 +5,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(https://images.cdn3.stockunlimited.net/preview1300/futuristic-background-design_1962537.jpg);
 }
 
 canvas {
   box-shadow: black 20px 10px 50px
+}
+
+h1 {
+  font-size: 50px;
+  color: brown;
 }

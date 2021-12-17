@@ -110,7 +110,7 @@ function isGameOver() {
     ctx.fillStyle = "White"
     ctx.font = "50px Verdana"
 
-    ctx.fillText("Game Over!", canvas.width / 9.5, canvas.height / 8)
+    ctx.fillText("Game Over!", canvas.width / 4.5, canvas.height / 2)
 
   }
   return gameOver
