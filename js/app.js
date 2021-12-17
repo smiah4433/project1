@@ -15,12 +15,12 @@ class SnakePart {
 let speed = 7;
 let tileCount = 24;
 let tileSize = canvas.width / tileCount -2
-let headX = 10
-let headY = 10
+let headX = 12 // defines the head position on the screen
+let headY = 10 // defines the tail on the screen
 const snakeParts = [];
 let tailLength = 0
-//variable to add to your head(makes the snake longer)(tail)
-let orangeX = 5
+
+let orangeX = 5 //positon for the tail body in the screen
 let orangeY = 5
 
 //moving our snake
@@ -107,7 +107,7 @@ function isGameOver() {
   }
 
   if (gameOver) {
-    ctx.fillStyle = "White"
+    ctx.fillStyle = "Red"
     ctx.font = "50px Verdana"
 
     ctx.fillText("Game Over!", canvas.width / 4.5, canvas.height / 2)
@@ -129,11 +129,10 @@ function drawScore() {
 function clearScreen() {
   ctx.fillStyle = 'black';
   ctx.fillRect(0,0,canvas.width,canvas.height);
-// console.log(clearScreen);
 }
-console.log(clearScreen);
 
-function drawSnake() {
+
+function drawSnake() { // drawing our snake
   // ctx.fillStyle = 'green'
   // ctx.fillRect(headX * tileCount, headY * tileCount, tileSize,tileSize)
 

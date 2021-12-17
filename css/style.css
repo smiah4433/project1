@@ -5,7 +5,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(https://images.cdn3.stockunlimited.net/preview1300/futuristic-background-design_1962537.jpg);
+  background-image: url("https://images.cdn3.stockunlimited.net/preview1300/futuristic-background-design_1962537.jpg");
 }
 
 canvas {
@@ -15,4 +15,11 @@ canvas {
 h1 {
   font-size: 50px;
   color: brown;
+}
+
+p {
+  font-style: italic;
+  font-size: 25px;
+  color: pink;
+
 }
